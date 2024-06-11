@@ -1,0 +1,27 @@
+{
+  "name": "cne",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@monaco-editor/react": "^4.6.0",
+    "antd": "^5.17.3",
+    "axios": "^0.24.0",
+    "next": "14.2.3",
+    "react": "^18",
+    "react-dom": "^18",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "20.12.12",
+    "@types/react": "18.3.3",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "5.4.5"
+  }
+}

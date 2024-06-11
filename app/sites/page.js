@@ -260,9 +260,7 @@ const Pages = () => {
             const response = await axios.get('api/getallsites', {
                 headers: {
                     "Content-Type": "application/json",
-                    'Access-Control-Request-Headers': '*',
                 },
-                timeout: 5000,
             });
             setSite(response.data);
             console.log("response======>", response);

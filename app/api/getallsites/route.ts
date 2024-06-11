@@ -18,7 +18,6 @@ export async function GET(req: NextRequest, res: NextResponse) {
                 'Access-Control-Request-Headers': '*',
                 'api-key': `${process.env.MONGO_DB_APIKEY}`
             },
-            timeout: 5000,
         });
         console.log('axiosResponse', axiosResponse);
         return NextResponse.json(axiosResponse.data);

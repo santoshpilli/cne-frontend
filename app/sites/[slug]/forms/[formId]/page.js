@@ -43,7 +43,7 @@ const PageEditor = () => {
             });
 
             const pageData = response.data.documents[0];
-            console.log("pageData==========>", pageData)
+           
 
             setTitle(pageData.title);
             setDescription(pageData.description);
@@ -114,7 +114,7 @@ const PageEditor = () => {
             formjson,
         };
 
-        console.log("obj:", data);
+    
 
         try {
             const response = await axios.post('/api/createform', data, {
@@ -142,7 +142,7 @@ const PageEditor = () => {
     };
 
     const updatePage = async () => {
-        console.log('updatePage function called');
+     
         setLoading(true);
 
         const id = formId;
@@ -156,7 +156,7 @@ const PageEditor = () => {
             formjson: fields,
         };
 
-        // console.log('updated data============>', data);
+  
 
         try {
             const response = await axios.post(`/api/updateform?pageId=${id}`, data, {

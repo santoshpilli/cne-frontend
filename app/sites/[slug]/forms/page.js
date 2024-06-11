@@ -42,7 +42,7 @@ const Pages = () => {
 
 
     const handleFormClick = (formId) => {
-        console.log('Form clicked:', formId);
+      
 
         router.push(`/sites/${slug}/forms/${formId}`);
     };

@@ -45,13 +45,13 @@ const Pages = () => {
 
 
     const handlePageClick = (pageId) => {
-        console.log('Page clicked:', pageId);
+
 
         router.push(`/sites/${slug}/posts/${pageId}`);
     };
 
     const handlePostClick = (postId) => {
-        console.log('Page clicked:', postId);
+
 
         router.push(`/sites/${slug}/posts/${postId}`);
     };

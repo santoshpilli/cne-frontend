@@ -1,8 +1,3 @@
-// /** @type {import('next').NextConfig} */
-// const nextConfig = {};
-
-// export default nextConfig;
-
 
 
 /** @type {import('next').NextConfig} */
@@ -11,8 +6,8 @@ const nextConfig = {
         return [
             {
                 source: '/',
-                destination: '/sites',
-                permanent: true,
+                destination: '/signin',
+                permanent: false,
             },
         ];
     },

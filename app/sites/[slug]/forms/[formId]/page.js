@@ -43,7 +43,7 @@ const PageEditor = () => {
             });
 
             const pageData = response.data.documents[0];
-           
+
 
             setTitle(pageData.title);
             setDescription(pageData.description);
@@ -114,7 +114,7 @@ const PageEditor = () => {
             formjson,
         };
 
-    
+
 
         try {
             const response = await axios.post('/api/createform', data, {
@@ -142,7 +142,7 @@ const PageEditor = () => {
     };
 
     const updatePage = async () => {
-     
+
         setLoading(true);
 
         const id = formId;
@@ -156,7 +156,7 @@ const PageEditor = () => {
             formjson: fields,
         };
 
-  
+
 
         try {
             const response = await axios.post(`/api/updateform?pageId=${id}`, data, {
@@ -165,7 +165,7 @@ const PageEditor = () => {
                 },
             });
 
-            console.log('Response from update API:', response);
+
 
             if (response.status === 200) {
                 messageApi.success('Page updated successfully!');

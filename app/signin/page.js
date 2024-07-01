@@ -23,7 +23,7 @@ const SignIn = () => {
     }
     return (
         <div>
-            <button onClick={() => signIn("google")}>Sign In with Google</button>
+            {/* <button onClick={() => signIn("google")}>Sign In with Google</button> */}
         </div>
     )
 }

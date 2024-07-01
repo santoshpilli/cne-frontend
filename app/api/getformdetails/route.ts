@@ -24,7 +24,7 @@ export async function GET(req: NextRequest, res: NextResponse) {
         });
         console.log('axiosResponse', axiosResponse);
         return NextResponse.json(axiosResponse.data);
-    } catch (error) {
+    } catch (error: any) {
         console.log('catch error', error);
         return NextResponse.json({ error: 'Failed to submit data: ' + error.message }, { status: 500 });
     }

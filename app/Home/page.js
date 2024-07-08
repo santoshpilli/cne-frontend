@@ -36,6 +36,15 @@ const SideMenu = () => {
         setActiveTab('Forms')
     };
 
+    const handleHeaderMenuClick = () => {
+        router.push(`/sites/${slug}/headermenu`);
+        setActiveTab('HeaderMenu')
+    };
+
+    const handleFooterMenuClick = () => {
+        router.push(`/sites/${slug}/footermenu`);
+        setActiveTab('FooterMenu')
+    };
     const handleLogout = () => {
 
         signOut("google")
@@ -63,6 +72,12 @@ const SideMenu = () => {
                                 </Menu.Item>
                                 <Menu.Item style={{ width: '70px', height: "2.4rem", textOverflow: 'inherit !important', backgroundColor: activeTab === "Forms" ? '#e6f4ff' : null, color: activeTab === "Forms" ? '#1677ff' : null }} onClick={handleFormClick}>
                                     Forms
+                                </Menu.Item>
+                                <Menu.Item style={{ width: '70px', height: "2.4rem", textOverflow: 'inherit !important', backgroundColor: activeTab === "Forms" ? '#e6f4ff' : null, color: activeTab === "Forms" ? '#1677ff' : null }} onClick={handleHeaderMenuClick}>
+                                    Header
+                                </Menu.Item>
+                                <Menu.Item style={{ width: '70px', height: "2.4rem", textOverflow: 'inherit !important', backgroundColor: activeTab === "Forms" ? '#e6f4ff' : null, color: activeTab === "Forms" ? '#1677ff' : null }} onClick={handleFooterMenuClick}>
+                                Footer
                                 </Menu.Item>
 
                             </>

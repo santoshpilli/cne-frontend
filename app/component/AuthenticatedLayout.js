@@ -12,9 +12,9 @@ const AuthenticatedLayout = ({ children }) => {
         return <p>Loading...</p>;
     }
 
-    if (status === "unauthenticated") {
-        router.push(`/signin`);
-    }
+    // if (status === "unauthenticated") {
+    //     router.push(`/signin`);
+    // }
 
     return (
         <>
